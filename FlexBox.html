@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlexBox Practice</title>
+
+
+    <style>
+        /* Exercise 2 */
+       .flexbox{
+        border: 2px gray solid;
+        width: 300px;
+        margin-top: 30px;
+       }
+       .flex-notification{
+        display: flex;
+        font-family: arial;
+        padding: 10px 15px;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .messages{
+           background-color: rgb(76, 143, 236);
+           padding: 5px 10px;
+           color: white;
+           font-weight:bold;
+           border-radius: 20px;
+       }
+
+       /* Exercise 3*/
+       .facebookcat{
+        border: 2px grey solid;
+        width: 300px;
+        padding-top: 20px 10px;
+
+       }
+       .profiles-cat{
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        
+       }
+       .imgE3{
+        width: 50px;
+        object-fit: contain;
+        border-radius: 30px;
+       }
+       .catname{
+        font-weight: bold;
+       }
+       .profile-abts{
+        color: grey;
+       }
+       .profile-name{
+        margin-left: 10px;
+       }
+       .but-cat{
+        background-color: rgb(76, 143, 236);
+        border-style: solid;
+        border-color:  rgb(76, 143, 236);
+        color: white;
+        font-weight: bold;
+        padding:10px 15px;
+        border-radius: 30px;
+        margin-left: 100px;
+        
+       }
+
+    </style>
 </head>
-<body>
+<body style="margin-bottom: 500px;">
     <div style="display: flex;
     width: 30px;">
         <div style="background-color:lightblue;">div1 text1</div>
@@ -84,5 +148,116 @@
         <div style="background-color:lightblue ;
         width:100px;">100px</div>
     </div>
+
+    <!-- FLEXBOX Exercise 1 -->
+     <div style="display: flex;
+     margin-top: 30px;">
+        <div style="background-color: lightblue;
+        width: 200px;">200px</div>
+        <div style="background-color: lightcoral;
+        width: 75px;">75px</div>
+     </div>
+
+     <div style="display: flex;
+     margin-top: 30px;">
+        <div style="background-color: lightblue;
+        width: 50px;">item 1</div>
+        <div style="background-color: lightcoral;
+        flex: 1;">item 2</div>
+        <div style="background-color: lightblue;
+        width: 50px;">item 3</div>
+
+     </div>
+
+     <div style="display: flex;
+     margin-top: 30px;
+     border-color: grey;
+     border-style: solid;
+     height: 50px;
+     align-items:center;
+     justify-content: space-between;">
+        <div  style="background-color: lightblue;
+       ">item1</div>
+        <div  style="background-color: lightblue;">item2</div>
+     </div>
+
+
+     <!-- FLEXBOX Exercise 2 -->
+    <div class="flexbox">
+        <div class="flex-notification">
+            <div>HOME</div>
+            <div class="messages">14</div>
+        </div>
+        <div class="flex-notification">
+            <div>Notifications</div>
+            <div class="messages">3</div>
+        </div>
+        <div class="flex-notification">
+            <div>Messages</div>
+            <div class="messages">5</div>
+        </div>
+
+     </div>
+
+     <!-- Exercise 3 -->
+      <div class="facebookcat">
+        <div class="profiles-cat">
+            
+            <div>
+                <img class="imgE3"src="catImages/catprofile3.avif" alt="">
+            </div>
+            <div class="profile-name">
+                <div class="catname">oliver</div>
+                <div class="profile-abts">
+                  <div>the cat</div>
+                  <div>Popular</div>
+                </div>
+            </div>
+            <div>
+                <button class="but-cat">Follow</button>
+            </div>
+
+        </div>
+
+
+        <div class="profiles-cat">
+            
+            <div>
+                <img class="imgE3"src="catImages/Cat03.jpg" alt="">
+            </div>
+            <div class="profile-name">
+                <div class="catname">oliver</div>
+                <div class="profile-abts">
+                  <div>the cat</div>
+                  <div>Popular</div>
+                </div>
+            </div>
+            <div>
+                <button class="but-cat">Follow</button>
+            </div>
+
+        </div>
+        
+
+        <div class="profiles-cat">
+            
+            <div>
+                <img class="imgE3"src="catImages/catprofile2.avif" alt="">
+            </div>
+            <div class="profile-name">
+                <div class="catname">oliver</div>
+                <div class="profile-abts">
+                  <div>the cat</div>
+                  <div>Popular</div>
+                </div>
+            </div>
+            <div>
+                <button class="but-cat">Follow</button>
+            </div>
+
+        </div>
+        
+        
+      </div>
 </body>
 </html>

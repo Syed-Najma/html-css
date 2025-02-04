@@ -39,12 +39,27 @@
         margin-left: 4px;
         border-radius: 5px;
         margin-bottom:4px;
+        margin-top: 10px;
       }
       .grid-style{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: center;
-        /* column-gap: 20px; */
+        grid-template-columns: 200px 200px 2000px;
+        /* align-items: center; */
+        column-gap: 20px;
+
+      }
+      .frnd-profile{
+        display: grid;
+        grid-template-columns:50px 1fr ;
+      }
+      /* .cat-imgpr{
+        width: 30px;
+        border-radius: 20px;
+      } */
+      .mut-img {
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
 
       }
 
@@ -63,7 +78,13 @@
       </p>
       </div>
       <div>
+        <div class="frnd-profile">
+        
+          <div class="cat-imgpr">
+            <img src="catprofile.jpg" alt="" class="mut-img">
+          </div>
         <p class="txt2">2 mutual friends</p>
+       </div>
       </div>
       <div>
         <button class="addfrnd">Add Friend</button>
@@ -81,7 +102,13 @@
         <p class="txt1">i'm too cute</p>
       </div>
       <div>
+        <div class="frnd-profile">
+        
+          <div class="cat-imgpr">
+            <img src="catprofile.jpg" alt="" class="mut-img">
+          </div>
         <p class="txt2">8 mutual friends</p>
+      </div>
       </div>
       <div>
         <button class="addfrnd">Add Friend</button>
@@ -99,9 +126,16 @@
           Liluu
       </p>
       </div>
-      <div>
-        <p class="txt2">6 mutual friends</p>
+      <div class="frnd-profile">
+        
+        <div class="cat-imgpr">
+          <img src="catprofile.jpg" alt="" class="mut-img">
+        </div>
+        <div >
+          <p class="txt2">6 mutual friends</p>
+        </div>
       </div>
+      
       <div>
         <button class="addfrnd">Add Friend</button>
       </div>
