@@ -1,0 +1,22 @@
+/* .search-bar{
+    /* font-size: 25px;
+    margin-top: 30px;
+    border-style: solid;
+    display:block; 
+  } */
+
+ .header{
+   height: 70px;
+   display: flex;
+ } 
+ .left-section{
+  background-color: lightblue;
+ }
+ .middle-section{
+  background-color:lightpink;
+  flex:1;
+  max-width:600px;
+ }
+ .right-section{
+  background-color:lightblue;
+ }
