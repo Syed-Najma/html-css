@@ -33,6 +33,7 @@
         border: 2px grey solid;
         width: 300px;
         padding-top: 20px 10px;
+        margin-top: 30px;
 
        }
        .profiles-cat{
@@ -65,6 +66,37 @@
         border-radius: 30px;
         margin-left: 100px;
         
+       }
+       /* Exercise 4 */
+       .flexdesign4{
+        display:flex;
+        background-color:rgba(89, 22, 129, 0.685);
+        width: 600px;
+        justify-content: space-between;
+        height: 40px;
+        align-items: center;
+        font-family: arial;
+        margin-top: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+       }
+       .home{
+        color: white;
+       }
+       .download{
+        color:white;
+        background-color: transparent;
+        border: 1px white solid;
+        padding: 5px 5px;
+        cursor: pointer;
+        
+       }
+       .searchbox{
+        padding:5px 50px;
+        border-radius:30px;
+        border-color:rgba(89, 22, 129, 0.685);
+        border-style: solid;
+        width:270px;
        }
 
     </style>
@@ -259,5 +291,15 @@
         
         
       </div>
+
+
+      <!-- Exercise 4 -->
+    <div class="flexdesign4">
+        <div class="home">Home</div>
+          <div >
+            <input class="searchbox" type="text" placeholder="Search"> </div>
+        <div >
+            <button class="download">Download</button></div>
+    </div>
 </body>
 </html>
