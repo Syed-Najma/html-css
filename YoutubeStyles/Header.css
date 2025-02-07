@@ -9,6 +9,16 @@
    height: 70px;
    display: flex;
    justify-content: space-between;
+   position: fixed;
+   left:0;
+   right:0;
+   top:0;
+   background-color: #fff;
+   border-bottom-width: 1px;
+   border-bottom-color:rgb(243, 239, 239);
+   border-bottom-style: solid;
+
+
  } 
  .left-section{
   display: flex;

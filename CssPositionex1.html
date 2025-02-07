@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Exercise</title>
+    <style>
+      .bottom-right{
+        position: fixed;
+        background-color: black;
+        color: white;
+        right: 20px;
+        bottom: 20px;
+      }
+      .rsidebar{
+        position: fixed;
+        /* right: 0px; */
+        left: 0;
+        top: 0;
+        bottom:0;
+        background-color: green;
+        color: white;
+        width: 100px;;
+        
+      }
+      .entirepage{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+      }
+
+      /* Ex 3 */
+      .modal{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 45%;
+        left: 45%;
+        background-color: white;
+        border-radius: 5px;
+        width: 250px;
+        height: 100px;
+        font-family: arial;
+       
+      }
+      .modal-title{
+        font-weight: bold;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .modaltext2{
+        margin-left: 20px;
+      }
+      .button
+      {
+        margin-left: 20px;
+        margin-top: 7px;
+        border: 2px rgb(175, 173, 173) solid;
+        border-radius: 4px;
+        padding: 4px 10px;
+      }
+    </style>
+
+</head>
+<body style="height: 3000px;">
+    <!-- EX 1 -->
+    <div class="bottom-right">
+        bottom right
+    </div>
+    <!-- Ex 2 -->
+    <div class="rsidebar">right sidebar</div>
+    <!-- Ex 3 -->
+    <div class="entirepage"></div>
+    <!--EX 4-->
+    <div class="modal">
+        <div class="modal-title">Modal Title</div>
+        <div class="modaltext2">This is the modal</div>
+        <div>
+            <button class="button">close</button>
+        </div>
+    </div>
+   
+</body>
+</html>

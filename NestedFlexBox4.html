@@ -5,28 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        .supersimpledevchannel{
-            
-            border:2px grey solid;
-            width: 500px;
+        .mainbox{
+            width: 450px;
             height: 200px;
-            margin-top: 30px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
-        .ssdmail{
+            border: 2px whitesmoke solid;
             display: flex;
-            flex-direction: row;
-            margin-left: 10px;
+            flex-direction:row;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+
+        }
+        .all-text{
+            display: flex;
+            flex-direction: column;
         }
         .imgssd{
           height: 50px;
           border-radius: 30px;
         }
         .textssd{
-           font-family: arial;
-           margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+            font-family: arial;
+            margin-left: 10px;
         }
         .channel-name{
             display: flex;
@@ -39,16 +39,15 @@
         .ch-name2{
           color: rgb(114, 112, 112);  
         }
-
-    /*  */
-
-    .youtube-ch-link{
+        .youtube-ch-link{
         display: flex;
+        flex-direction:row;
         border: 2px rgb(206, 204, 204) solid;
         width: 350px;
         height: 100px;
         border-radius: 20px;
-        margin: 20px 80px;
+        margin-top: 20px;
+        /* margin: 20px 80px; */
     }
     .greybox{
         border: 1px  rgb(206, 204, 204) solid;
@@ -57,6 +56,10 @@
         background-color: rgb(206, 204, 204);
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+    }
+    .youtube-webDev{
+        display: flex;
+        flex-direction: column;
     }
     .link{
         font-family: arial;
@@ -68,40 +71,37 @@
     .backendwd{
         font-family: arial;
         margin-left: 20px;
-    }
+    } 
+
     </style>
 </head>
 <body>
-    <div class="supersimpledevchannel">
-        <div class="ssdmail">
-            <div>
-                <img class="imgssd" src="catImages/catprofile2.avif" alt="">
-            </div>
-            <div class="textssd">
-              <div class="channel-name">
-                 <div class="ch-name1">supersimple.dev</div>
-                 <div class="ch-name2">@SuperSimpleDev</div>
-              </div>
-              <div>
-                What is backend web development? A complete<br>overview.New video is up!
-              </div>
-    
-            </div>
+
+    <div class="mainbox">
+        <div>
+            <img class="imgssd" src="catImages/catprofile2.avif" alt="">
         </div>
-    
-    <!--  -->
-        <div class="youtube-ch-link">
-            <div class="greybox"></div>
-            <div>
-                <div class="link">
-                    youtube.com
-                   <!-- <a class="link" href="youtube.com">youtube.com</a> -->
+        <div class="all-text">
+            <div class="textssd">
+                <div class="channel-name">
+                    <div class="ch-name1">supersimpledev</div>
+                    <div class="ch-name2">@SuperSimpleDev</div>
                 </div>
-                <div class="backendwd">
-                    Backend web development- a complete overview(2021)
+                <div>
+                    What is backend web development? A complete<br>overview.New video is up!
                 </div>
             </div>
-    
+            <div class="youtube-ch-link">
+                <div class="greybox"></div>
+                <div class="youtube-webDev">
+                    <div class="link">
+                        youtube.com
+                    </div>
+                    <div class="backendwd">
+                        Backend web development- a complete overview(2021)
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
