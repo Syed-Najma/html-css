@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            width: 200px;
+            height: 200px;
+        }
+        .shopping{
+            position:relative;
+            /* width: 200px;
+            height: 200px; */
+            border: 2px grey solid;
+            display: inline-block;
+        }
+        .absolute{
+           position: absolute;
+           top: 0; 
+           right: 0;
+           background-color: black;
+           color: white;
+           padding: 2px 4px;
+           font-size: 15px;
+           margin-top: 3px;
+        }
+        .button{
+            position: absolute;
+            left: 50px;
+            top: 30px;
+            padding: 5px 10px;
+            
+        }
+        .box{
+            position: absolute;
+            bottom:0;
+            height: 90px;
+            right: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="shopping">
+            <img class="img" src="catImages/clothimage.jpg" alt="">
+         <div class="absolute">20% OFF</div>
+         <div>
+            <div class="box">
+                <div class="button">
+                    <button >Add to Cart</button>
+                </div>
+            </div>
+            
+         </div>
+         </div>
+    </div>
+</body>
+</html>

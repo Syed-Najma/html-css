@@ -6,17 +6,18 @@
   } */
 
  .header{
-   height: 70px;
-   display: flex;
-   justify-content: space-between;
-   position: fixed;
-   left:0;
-   right:0;
-   top:0;
-   background-color: #fff;
-   border-bottom-width: 1px;
-   border-bottom-color:rgb(243, 239, 239);
-   border-bottom-style: solid;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 100;
+    background-color: #fff;
+    border-bottom-width: 1px;
+    border-bottom-color:rgb(243, 239, 239);
+    border-bottom-style: solid;
 
 
  } 
@@ -110,6 +111,20 @@
  }
  .notification{
   height: 24px;
+ }
+ .notification-container{
+  position: relative;
+ }
+ .notification-number{
+  position: absolute;
+  background-color: rgb(208, 1, 1);
+  top: -2px;
+  right: -5px;
+  color: white;
+  padding: 2px 5px;
+  font-family: roboto,arial;
+  font-size: 10px;
+  border-radius: 30px;
  }
  .my-channel-profile{
   height: 32px;

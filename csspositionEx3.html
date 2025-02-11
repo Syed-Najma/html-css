@@ -4,16 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .info{
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 80px;
+            top: 0;
+            bottom: 0;
+            background-color:rgb(58, 57, 57);
+            width: 300px;
+            color: white;
+            padding-left: 20px;
+            font-family: arial;
+            
+        }
+        .info1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .plus{
+            color: grey;
+            margin-right: 30px;
+            font-size:large;
+        }
+        .info2{
+            color: grey;
+            line-height: 25px;
+
+        }
+        .sidebar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgb(49, 48, 48);
+            width: 80px;
+            padding-top: 30px;
+        }
+        .img1{
+            height: 50px;
+            border-radius: 25px;
+        }
+        .img2{
+            height: 50px;
+            border-radius: 25px;
+        }
+        .img3{
+            height: 50px;
+            border-radius: 25px;
+        }
+    </style>
 </head>
-<body>
-    <div>
-        <div>
+<body style="height: 1000px;">
+    <div class="info">
+        <div class="info1">
             <div>INFO</div>
-            <div>+</div>
+            <div class="plus">+</div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="info2">
+            <div># new-video</div>
+            <div># updates</div>
+            <div># faq</div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div> <img class="img1" src="catImages/Cat03.jpg" alt=""></div>
+        <div> <img class="img2"src="catImages/flower.avif" alt=""></div>
+        <div> <img class="img3" src="catImages/catprofile3.avif" alt=""></div>
     </div>
 </body>
 </html>
