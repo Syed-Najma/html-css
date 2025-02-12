@@ -15,7 +15,7 @@
      <link rel="stylesheet" href="YoutubeStyles/video.css">
 </head>
 <body style="height: 3000px;">
-<div class="header">
+<nav class="header">
   <div class="left-section">
     <img  class="hamburger-menu"src="Headericons/hamburger-menu.svg" alt="">
     <img class="youtube-logo"src="Headericons/youtube-logo.svg" alt="">
@@ -24,45 +24,96 @@
     <input class="search-bar"type="text" placeholder="Search">
     <button class="search-button ">
       <img class="search-icon" src="Headericons/search.svg" alt="">
+      <div class="tooltip">Search</div>
     </button>
     <button class="voice-search-button">
       <img  class="voice-search-icon" src="Headericons/voice-search-icon.svg" alt="">
+      <div class="tooltip">Search with your voice</div>
     </button>
   </div> 
    <div class="right-section">
-  
-      <img class="uploading" src="Headericons/upload.svg" alt="">
-      <img class="youtube-apps" src="Headericons/youtube-apps.svg" alt="">
+      <div class="upload-icon-container">
+        <img class="uploading" src="Headericons/upload.svg" alt="">
+        <div class="tooltip">Create</div>
+      </div>
+      <div class="youtube-apps-container">
+        <img class="youtube-apps" src="Headericons/youtube-apps.svg" alt="">
+        <div class="tooltip">Youtube Apps</div>
+      </div>
+      
       <div class="notification-container">
         <img class="notification" src="Headericons/notifications.svg" alt="">
         <div class="notification-number">3</div>
+        <div class="tooltip">Notifications</div>
       </div>
       
       <img class="my-channel-profile" src="Headericons/my-channel.jpeg" alt="">
     
    </div>
-</div>
+  </nav>
 
 <!-- Side bar -->
- <div class="sidebar">sidebar</div>
+ <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="Headericons/home.svg" alt="">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Headericons/explore.svg" alt="">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Headericons/subscriptions.svg" alt="">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Headericons/originals.svg" alt="">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Headericons/youtube-music.svg" alt="">
+      <div>Youtube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="Headericons/library.svg" alt="">
+      <div>Library</div>
+    </div>
+  </nav>
 
-
-  
-  <div class="Youtube-GRID">
+<main>
+  <section class="Youtube-GRID">
 
     <div class="video-preview">
       <div class="thumbnail-row">
-        <img class="thumbnail"src="thumbnail/thumbnail-1.webp" alt="error">
+        <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+          <img class="thumbnail"src="thumbnail/thumbnail-1.webp" alt="error">
+        </a>
         <div class="video-time">14:20</div>
       </div>
     
       <div class="channel-info-grid">
         <div class="channelpicture">
-          <img class="profile-picture" src="ChannelPictures/channel-1.jpeg" alt="error">
+          <div class="profile-tool-tip">
+            <a href="https://www.youtube.com/c/mkbhd">
+              <img class="profile-picture" src="ChannelPictures/channel-1.jpeg" alt="error">
+            </a>
+      
+              <!-- tooltip -->
+              <div class="tooltip2">
+                <div>
+                  <img class="tool-pic" src="ChannelPictures/channel-1.jpeg" alt="">
+                </div>
+                <div class="text-tooltip">
+                  <div class="tool-name" >Marques Brownlee</div>
+                  <div class="tool-subs" >15M subscribers</div>
+                </div>
+             </div>
+          </div>
+         
         </div>
         <div class="channelinfo">
           <p class="video-title"> 
-            Talking Tech and AI with Google CEO
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">Talking Tech and AI with Google CEO</a>
            </p>
            <p class="video-author">
              Marques Brownlee
@@ -80,17 +131,22 @@
   
     <div class="video-preview">
       <div class="thumbnail-row">
-        <img class="thumbnail"src="thumbnail/thumbnail-2.webp" alt="error">
+        <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+          <img class="thumbnail"src="thumbnail/thumbnail-2.webp" alt="error">
+        </a>
         <div class="video-time">8:22</div>
       </div>
   
       <div class="channel-info-grid">
         <div class="channelpicture">
-          <img class="profile-picture" src="ChannelPictures/channel-2.jpeg" alt="">
+          <a href="https://www.youtube.com/c/markiplier">
+            <img class="profile-picture" src="ChannelPictures/channel-2.jpeg" alt="">
+          </a>
+          
         </div>
         <div class="channelinfo">
           <p class="video-title"> 
-            Try Not To Laugh Challenge #9
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">Try Not To Laugh Challenge #9</a>
            </p>
            <p class="video-author">
              Markiplier
@@ -109,17 +165,21 @@
     <!--  -->
     <div class="video-preview">
       <div class="thumbnail-row">
-        <img class="thumbnail"src="thumbnail/thumbnail-3.webp" alt="error">
+        <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+          <img class="thumbnail"src="thumbnail/thumbnail-3.webp" alt="error">
+        </a>
         <div class="video-time">9:13</div>
       </div>
     
       <div class="channel-info-grid">
         <div class="channelpicture">
-          <img class="profile-picture" src="ChannelPictures/channel-3.jpeg" alt="error">
+          <a href="https://www.youtube.com/user/SSSniperWolf">
+            <img class="profile-picture" src="ChannelPictures/channel-3.jpeg" alt="error">
+          </a>
         </div>
         <div class="channelinfo">
           <p class="video-title"> 
-            Crazy Tik Toks Taken Moments Before...
+            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w"> Crazy Tik Toks Taken Moments Before...</a>
            </p>
            <p class="video-author">
             SSSniperWolf
@@ -137,17 +197,21 @@
   
     <div class="video-preview">
       <div class="thumbnail-row">
-        <img class="thumbnail"src="thumbnail/thumbnail-4.webp" alt="error">
+         <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+          <img class="thumbnail"src="thumbnail/thumbnail-4.webp" alt="error">
+        </a>
         <div class="video-time">22:09</div>
       </div>
   
       <div class="channel-info-grid">
         <div class="channelpicture">
-          <img class="profile-picture" src="ChannelPictures/channel-4.jpeg" alt="">
+          <a href="https://www.youtube.com/c/veritasium">
+            <img class="profile-picture" src="ChannelPictures/channel-4.jpeg" alt="">
+          </a>
         </div>
         <div class="channelinfo">
-          <p class="video-title"> 
-            The Simplest Math Problem No One Can...
+          <p class="video-title">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">The Simplest Math Problem No One Can...</a>
            </p>
            <p class="video-author">
             Veritasium
@@ -167,18 +231,21 @@
 
     <div class="video-preview">
       <div class="thumbnail-row">
-        <img class="thumbnail"src="thumbnail/thumbnail-5.webp" alt="error">
+        <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+          <img class="thumbnail"src="thumbnail/thumbnail-5.webp" alt="error">
+        </a>
         <div class="video-time">11:17</div>
       </div>
     
       <div class="channel-info-grid">
         <div class="channelpicture">
-          <img class="profile-picture" src="ChannelPictures/channel-5.jpeg" alt="error">
+          <a href="https://www.youtube.com/c/CSDojo">
+            <img class="profile-picture" src="ChannelPictures/channel-5.jpeg" alt="error">
+          </a>
         </div>
         <div class="channelinfo">
-          <p class="video-title"> 
-            
-            Kadane's Algorithm to Maximum Sum Subarray
+          <p class="video-title">  
+            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw"> Kadane's Algorithm to Maximum Sum Subarray</a>
           </p>
            <p class="video-author">
             CS Dojo
@@ -196,16 +263,21 @@
   
     <div class="video-preview">
       <div class="thumbnail-row">
-        <img class="thumbnail"src="thumbnail/thumbnail-6.webp" alt="error">
+        <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+          <img class="thumbnail"src="thumbnail/thumbnail-6.webp" alt="error">
+        </a>
         <div class="video-time">19:59</div>
       </div> 
       <div class="channel-info-grid">
         <div class="channelpicture">
-          <img class="profile-picture" src="ChannelPictures/channel-6.jpeg" alt="">
+          <a href=https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA>
+            <img class="profile-picture" src="ChannelPictures/channel-6.jpeg" alt="">
+         </a>
+
         </div>
         <div class="channelinfo">
-           <p class="video-title"> 
-             Anything You Can Fit In The Circle I’ll Pay For
+           <p class="video-title">
+             <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg"> Anything You Can Fit In The Circle I’ll Pay For</a>
            </p>
            <p class="video-author">
              MrBeast
@@ -223,7 +295,10 @@
 
 
 
-  </div>
+  </section>
+  
+  
+</main>
   
   
 
